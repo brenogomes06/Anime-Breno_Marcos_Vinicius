@@ -1,0 +1,80 @@
+body
+{
+    margin: 0px;
+}
+
+
+/* section que é o pai dos elementos abaixo */
+.info_anime
+{
+    display: flex;
+    flex-direction: column;
+
+    background-color: crimson;
+}
+
+
+/* título do anime */
+.info_anime .nome-anime
+{
+    background-color: violet;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    color: red;
+    text-decoration: underline;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+    text-shadow: 2px 2px 0px black;
+
+}
+
+
+/* div que é pai da imagem e parágrafo de introdução */
+.info_anime .introdução-anime
+{
+    background-color: aqua;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin-top: 80px;
+    padding: 60px 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.info_anime .introdução-anime img
+{
+    width: 320px;
+    height: 180px;
+}
+
+.info_anime .introdução-anime p
+{
+    margin: 0px;
+    max-width: 50%;
+    font-size: 25px;
+}
+
+/* parte da lista de epidódios */
+.info_anime .lista-episodios ul
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    list-style-type: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 35px 0px;
+    padding: 0px;
+}
+
+.info_anime .lista-episodios li
+{
+    margin: 15px 0px;
+    font-size: 27px;
+    text-decoration: underline;
+}
