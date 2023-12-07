@@ -1,7 +1,28 @@
-﻿// 1ª função do site, aparecer e ocultar div aside
+﻿// variáveis para a 1ª função
 var aside_aparece = document.getElementsByClassName("user-menu")[0];
 var state = 0;
+/* ********************/
 
+
+// variáveis para a 2ª função
+// acessando o quadro onde irá ser escrito o texto.
+var postar0 = document.getElementsByClassName("submeter-comentario")[0];
+var postar1 = document.getElementsByClassName("submeter-comentario")[1];
+var postar2 = document.getElementsByClassName("submeter-comentario")[2];
+
+// acessando a div que oculta os parárafos.
+var aparecer0 = document.getElementsByClassName("postagem-comentario")[0];
+var aparecer1 = document.getElementsByClassName("postagem-comentario")[1];
+var aparecer2 = document.getElementsByClassName("postagem-comentario")[2];
+
+// acessando o conteúdos dos parágrafos.
+var texto0 = document.getElementsByClassName("p2")[0];
+var texto1 = document.getElementsByClassName("p2")[1];
+var texto2 = document.getElementsByClassName("p2")[2];
+/* ********************/
+
+
+// 1ª função do site, aparecer e ocultar div aside
 function Aparecer_aside() 
 {
     aside_aparece.classList.remove("sumir_aside");
@@ -12,10 +33,8 @@ function Aparecer_aside()
         state = state - 2;
     }
 }
-
-
-
 /* ----------------------------------------------------------------------------------------------------*/
+
 
 // 2ª Função do site, para selecionar o anime que quer assistir.
 function Assistir_anime0()
@@ -53,292 +72,40 @@ function Assistir_anime2()
     aparecer1.classList.add("sumir");
     aparecer2.classList.remove("sumir");
 }
-
-
 /* ----------------------------------------------------------------------------------------------------*/
 
 
-// 3ª função do site, onmouseover para deixar a lista de episódios em negrito.
-// Super Onze
-function Deixar_negrito0() 
+// 4ª função do site, aparecer comentário submetido na área de texto
+function Enviar_comentario0()
 {
-    let negrito_0 = document.getElementsByClassName("episodio")[0];
+    aparecer0.classList.remove("sumir-comentario");
 
+    postar0 = postar0.value;
+    var guardar_conteudo0 = postar0;
 
-    negrito_0.style.fontWeight = "bold";
+    texto0.textContent = guardar_conteudo0;
 }
 
-function Deixar_negrito1() 
+function Enviar_comentario1()
 {
+    aparecer1.classList.remove("sumir-comentario");
 
-    let negrito_1 = document.getElementsByClassName("episodio")[1];
+    postar1 = postar1.value;
+    var guardar_conteudo1 = postar1;
 
-
-    negrito_1.style.fontWeight = "bold";
+    texto1.textContent = guardar_conteudo1;
 }
 
-function Deixar_negrito2() 
+function Enviar_comentario2()
 {
+    aparecer2.classList.remove("sumir-comentario");
 
-    let negrito_2 = document.getElementsByClassName("episodio")[2];
+    postar2 = postar2.value;
+    var guardar_conteudo2 = postar2;
 
-
-    negrito_2.style.fontWeight = "bold";
+    texto2.textContent = guardar_conteudo2;
 }
-
-function Deixar_negrito3() 
-{
-
-    let negrito_3 = document.getElementsByClassName("episodio")[3];
-
-
-    negrito_3.style.fontWeight = "bold";
-}
-
-function Deixar_negrito4() 
-{
-
-    let negrito_4 = document.getElementsByClassName("episodio")[4];
-
-
-    negrito_4.style.fontWeight = "bold";
-}
-
-function Deixar_negrito5() 
-{
-
-    let negrito_5 = document.getElementsByClassName("episodio")[5];
-
-
-    negrito_5.style.fontWeight = "bold";
-}
-
-
-// Naruto
-function Deixar_negrito0() 
-{
-    let negrito_0 = document.getElementsByClassName("episodio")[6];
-
-
-    negrito_0.style.fontWeight = "bold";
-}
-
-function Deixar_negrito1() 
-{
-
-    let negrito_1 = document.getElementsByClassName("episodio")[7];
-
-
-    negrito_1.style.fontWeight = "bold";
-}
-
-function Deixar_negrito2() 
-{
-
-    let negrito_2 = document.getElementsByClassName("episodio")[8];
-
-
-    negrito_2.style.fontWeight = "bold";
-}
-
-function Deixar_negrito3() 
-{
-
-    let negrito_3 = document.getElementsByClassName("episodio")[9];
-
-
-    negrito_3.style.fontWeight = "bold";
-}
-
-function Deixar_negrito4() 
-{
-
-    let negrito_4 = document.getElementsByClassName("episodio")[10];
-
-
-    negrito_4.style.fontWeight = "bold";
-}
-
-function Deixar_negrito5() 
-{
-
-    let negrito_5 = document.getElementsByClassName("episodio")[11];
-
-
-    negrito_5.style.fontWeight = "bold";
-}
-
-// One Piece
-function Deixar_negrito0() 
-{
-    let negrito_0 = document.getElementsByClassName("episodio")[12];
-
-
-    negrito_0.style.fontWeight = "bold";
-}
-
-function Deixar_negrito1() 
-{
-
-    let negrito_1 = document.getElementsByClassName("episodio")[13];
-
-
-    negrito_1.style.fontWeight = "bold";
-}
-
-function Deixar_negrito2() 
-{
-
-    let negrito_2 = document.getElementsByClassName("episodio")[14];
-
-
-    negrito_2.style.fontWeight = "bold";
-}
-
-function Deixar_negrito3() 
-{
-
-    let negrito_3 = document.getElementsByClassName("episodio")[15];
-
-
-    negrito_3.style.fontWeight = "bold";
-}
-
-function Deixar_negrito4() 
-{
-
-    let negrito_4 = document.getElementsByClassName("episodio")[16];
-
-
-    negrito_4.style.fontWeight = "bold";
-}
-
-function Deixar_negrito5() 
-{
-
-    let negrito_5 = document.getElementsByClassName("episodio")[17];
-
-
-    negrito_5.style.fontWeight = "bold";
-}
-
-
-
-
-
 /* ----------------------------------------------------------------------------------------------------*/
-
-// 4ª função do site, onmouseout para tirar o negrito da lista de episódios.
-// Super Onze
-
-
-
-// Naruto
-function Tirar_negrito0() 
-{
-    let negrito_0 = document.getElementsByClassName("episodio")[6];
-
-
-    negrito_0.style.fontWeight = "normal";
-}
-
-function Tirar_negrito1() 
-{
-
-    let negrito_1 = document.getElementsByClassName("episodio")[7];
-
-
-    negrito_1.style.fontWeight = "normal";
-}
-
-function Tirar_negrito2() 
-{
-
-    let negrito_2 = document.getElementsByClassName("episodio")[8];
-
-
-    negrito_2.style.fontWeight = "normal";
-}
-
-function Tirar_negrito3() 
-{
-
-    let negrito_3 = document.getElementsByClassName("episodio")[9];
-
-
-    negrito_3.style.fontWeight = "normal";
-}
-
-function Tirar_negrito4() 
-{
-
-    let negrito_4 = document.getElementsByClassName("episodio")[10];
-
-
-    negrito_4.style.fontWeight = "normal";
-}
-
-function Tirar_negrito5() 
-{
-
-    let negrito_5 = document.getElementsByClassName("episodio")[11];
-
-
-    negrito_5.style.fontWeight = "normal";
-}
-
-
-// One Piece
-function Tirar_negrito0() 
-{
-    let negrito_0 = document.getElementsByClassName("episodio")[12];
-
-
-    negrito_0.style.fontWeight = "normal";
-}
-
-function Tirar_negrito1() 
-{
-
-    let negrito_1 = document.getElementsByClassName("episodio")[13];
-
-
-    negrito_1.style.fontWeight = "normal";
-}
-
-function Tirar_negrito2() 
-{
-
-    let negrito_2 = document.getElementsByClassName("episodio")[14];
-
-
-    negrito_2.style.fontWeight = "normal";
-}
-
-function Tirar_negrito3() 
-{
-
-    let negrito_3 = document.getElementsByClassName("episodio")[15];
-
-
-    negrito_3.style.fontWeight = "normal";
-}
-
-function Tirar_negrito4() 
-{
-
-    let negrito_4 = document.getElementsByClassName("episodio")[16];
-
-
-    negrito_4.style.fontWeight = "normal";
-}
-
-function Tirar_negrito5() 
-{
-
-    let negrito_5 = document.getElementsByClassName("episodio")[17];
-
-
 
 
 
