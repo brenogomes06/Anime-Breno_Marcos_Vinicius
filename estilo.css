@@ -1,14 +1,3 @@
-body {
-    margin: 0px;
-    background-image: url("imagens/1322308.jpeg");
-    background-color: rgba(0, 0, 0, 0.514);
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-
 /* ---------------------ASIDE------------------ */
 .user-menu {
     display: flex;
@@ -26,21 +15,6 @@ body {
 
 .sumir_aside {
     visibility: hidden;
-}
-
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 2px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgb(97, 97, 97);
-    border-radius: 2px;
 }
 
 .user-menu section {
@@ -97,14 +71,14 @@ body {
     text-align: center;
 }
 
-.user-menu-main-options nav ul {
+.user-menu-main-options nav {
     display: flex;
     flex-direction: column;
     margin: 0%;
     padding: 5px 0%;
 }
 
-.user-menu-main-options nav ul a {
+.user-menu-main-options nav a {
     display: flex;
     margin: 15px 0px;
     margin-left: 10%;
@@ -114,7 +88,7 @@ body {
     min-width: 40%;
 }
 
-.user-menu-main-options nav ul a:hover {
+.user-menu-main-options nav a:hover {
     color: orange;
 }
 
@@ -146,10 +120,43 @@ body {
     color: white;
 }
 
-/* --------------------ASIDE------------------ */
+/* ------------------- ASIDE ----------------- */
 
+/* -----------------SCROLLBAR----------------- */
+::-webkit-scrollbar {
+    width: 10px;
+}
 
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 2px;
+}
 
+::-webkit-scrollbar-thumb {
+    background: rgb(97, 97, 97);
+    border-radius: 2px;
+}
+
+/* -------------------------------------------- */
+
+/* -------------------- BODY ------------------ */
+body {
+    margin: 0px;
+    background-image: url("imagens/1322308.jpeg");
+    background-color: rgba(0, 0, 0, 0.514);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* -------------------- CONTAINER ------------------ */
+
+.container {
+    height: 100dvh;
+}
+
+/* -------------------- HEADER ------------------ */
 header {
     display: flex;
     flex-direction: column;
@@ -166,6 +173,17 @@ header {
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
+}
+
+#logo-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#logo-img {
+    height: 100px;
+    border-radius: 50%;
 }
 
 .header-menu {
@@ -227,10 +245,9 @@ header {
     cursor: pointer;
 }
 
-.container {
-    height: 100dvh;
-}
+/* -------------------------------------------- */
 
+/* -------------------- MAIN ------------------ */
 .container-main {
     background-color: white;
     display: flex;
@@ -238,12 +255,39 @@ header {
     align-items: center;
 }
 
-.catalog {
+/* --------- Catalog background function ------- */
+
+.super-onze-anime-card {
+    background-image: url(imagens/elevenstrikerswp.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.naruto-anime-card {
+    background-image: url(imagens/naruto-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.one-piece-anime-card {
+    background-image: url(imagens/onepiece_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.catalog-background{
     background-image: url(imagens/thumb-1920-532559.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+    background-position: center;
 
+}
+
+.catalog {
+    width: 100%;
     display: flex;
     height: 65dvh;
     justify-content: space-around;
@@ -261,8 +305,11 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 15px;
     border-radius: 6px;
+}
+
+.anime-card:hover {
+    background-color: rgb(245, 222, 179);
 }
 
 .anime-card p {
@@ -294,13 +341,7 @@ header {
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
+/* -------------------------------------------- */
 
 /* estilo da sessão com as infos dos animes */
 
@@ -311,9 +352,9 @@ header {
     border: 2px solid white;
     border-radius: 15px;
     box-shadow: 1px 1px 10px 1px white;
-    margin: 100px;
+    margin: 100px 100px 0px;
     background-color: rgba(0, 0, 0, 0.4);
-    margin-bottom: 50px;
+    backdrop-filter: blur(3px);
 }
 
 
@@ -323,10 +364,10 @@ header {
     align-items: center;
     justify-content: center;
     color: red;
+    margin-top: 30px;
     text-decoration: underline;
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 30px;
     text-shadow: 2px 2px 0px black;
 
 }
@@ -337,6 +378,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
     padding: 0px 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -373,9 +415,15 @@ header {
 .info_anime .lista-episodios li {
     margin: 15px 0px;
     font-size: 27px;
-    text-shadow: 5px 5px 5px white;
+    text-shadow: 1px 1px 1px white;
     cursor: pointer;
 }
+
+.info_anime .lista-episodios li:hover {
+    text-shadow: 5px 5px 5px white;
+}
+
+
 
 /* *********************************************************** */
 
@@ -400,3 +448,5 @@ header {
 .sumir {
     display: none;
 }
+
+/* -------------------------------------------- */
