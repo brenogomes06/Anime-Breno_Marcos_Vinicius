@@ -1,324 +1,318 @@
 <!DOCTYPE html>
-    <html lang="pt-br">
+<html lang="pt-br">
 
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Meus Animes</title>
-            <link rel="stylesheet" href="estilo.css ">
-        </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Animes</title>
+    <link rel="stylesheet" href="estilo.css ">
+    <link rel="stylesheet" href="responsividade.css">
+</head>
 
-        <body>
+<body>
 
-            <div class="container">
+    <div class="container">
 
-                <header>
-        
-                    <h1 id="logo">
-                        Meus Animes
-                    </h1>
-        
-                    <nav class="header-menu">
-        
-                        <ul>
-                            <li>Navegar</li>
-                            <li>Mangá</li>
-                            <li>Jogos</li>
-                            <li>Notícias</li>
-                        </ul>
-        
-                        <div class="header-user-menu" onclick="Aparecer_aside()">
-                            <img src="imagens/rent-a-gf-yaemori-s3-main-kv.png" id="user-menu-icon" alt="">
-                            <img src="imagens/pngwing.com.png" id="user-icon-menu-dropdown" alt="">
-                        </div>
-        
-                    </nav>
-        
-                </header>
-        
-                <aside class="user-menu sumir_aside">
-        
-                    <section>
-        
-                        <div class="user-menu-header">
-        
-                            <div class="user-menu-header-up">
-                                
-                                <img src="imagens/rent-a-gf-yaemori-s3-main-kv.png" id="user-icon" alt="">
-                                <p>UsuárioAnônimo</p>
+        <header>
 
-                            </div>
+            <div id="logo-img-container">
+                <img id="logo-img" src="imagens\meus_animes__1_-removebg-preview.png" alt="">
+                <h1 id="logo">Meus Animes</h1>
+                <div></div>
+            </div>
 
-                            <div class="user-menu-header-down">
+            <nav class="header-menu">
 
-                                <img src="imagens/workspace_premium_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                                <p>TESTE GRATUITO</p>
+                <ul>
+                    <li>Navegar</li>
+                    <li>Mangá</li>
+                    <li>Jogos</li>
+                    <li>Notícias</li>
+                </ul>
 
-                            </div>
-                        </div>
-        
-                        <div class="user-menu-main">
-        
-                            <div class="user-menu-main-options">
-        
-                                <div class="user-menu-main-options-line"></div>
-        
-                                <nav>
-                                    <ul>
-                                        <a href="">
-                                            <img id="nav-logos" src="imagens/bookmark_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                                            Fila
-                                        </a>
+                <div class="header-user-menu" onclick="Aparecer_aside()">
+                    <img src="imagens/rent-a-gf-yaemori-s3-main-kv.png" id="user-menu-icon" alt="">
+                    <img src="imagens/pngwing.com.png" id="user-icon-menu-dropdown" alt="">
+                </div>
 
-                                        <a href="">
-                                            <img id="nav-logos" src="imagens/list_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                                            Listas
-                                        </a>
+            </nav>
 
-                                        <a href="">
-                                            <img id="nav-logos" src="imagens/history_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                                            Históricos
-                                        </a>
+        </header>
 
-                                        <div class="user-menu-main-options-line"></div>
-                                        <a href="">
-                                            <img id="nav-logos" src="imagens/notifications_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                                            Notificações
-                                        </a>
+        <aside class="user-menu sumir_aside">
 
-                                        <a href="">
-                                            <img id="nav-logos" src="imagens/account_circle_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                                            Minha Conta
-                                        </a>
+            <section>
 
-                                        <a href="">
-                                            <img id="nav-logos" src="imagens/help_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                                            Suporte
-                                        </a>
+                <div class="user-menu-header">
 
-                                    </ul>
-                                </nav>
-        
-                            </div>
-        
-                        </div>
-        
-                    </section>
+                    <div class="user-menu-header-up">
 
-                    <a href="" id="logout">
-                        <img id="nav-logos" src="imagens/logout_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                        Sair
-                    </a>
-        
-                </aside>
+                        <img src="imagens/rent-a-gf-yaemori-s3-main-kv.png" id="user-icon" alt="">
+                        <p>UsuárioAnônimo</p>
+
+                    </div>
+
+                    <div class="user-menu-header-down">
+
+                        <img src="imagens/workspace_premium_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                        <p>TESTE GRATUITO</p>
+
+                    </div>
+                </div>
+
+                <div class="user-menu-main">
+
+                    <div class="user-menu-main-options">
+
+                        <div class="user-menu-main-options-line"></div>
+
+                        <nav>
+                            <a href="">
+                                <img id="nav-logos" src="imagens/bookmark_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                Fila
+                            </a>
+
+                            <a href="">
+                                <img id="nav-logos" src="imagens/list_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                Listas
+                            </a>
+
+                            <a href="">
+                                <img id="nav-logos" src="imagens/history_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                Históricos
+                            </a>
+
+                            <div class="user-menu-main-options-line"></div>
+                            <a href="">
+                                <img id="nav-logos" src="imagens/notifications_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                Notificações
+                            </a>
+
+                            <a href="">
+                                <img id="nav-logos" src="imagens/account_circle_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                Minha Conta
+                            </a>
+
+                            <a href="">
+                                <img id="nav-logos" src="imagens/help_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                                Suporte
+                            </a>
+
+                        </nav>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <a href="" id="logout">
+                <img id="nav-logos" src="imagens/logout_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                Sair
+            </a>
+
+        </aside>
         <main>
-        
-                    <div class="container-main">
-        
-                        <section class="catalog">
-        
-                            <div class="anime-card">
-                                <p>
-                                    Super Onze
-                                </p>
 
-                                <img src="imagens/super_onze.jpg" height="120px" width="210px">
+            <section class="container-main">
 
-                                <h2 id="paragrafo">
-                                    Episódios: 124
-                                </h2>
+                <div class="catalog catalog-background" id="catalog">
 
-                                <button onclick="Assistir_anime0()"> Assistir </button>
-
-                            </div>
-        
-                            <div class="anime-card">
-                                <p>
-                                    Naruto
-                                </p>
-
-                                <img src="imagens/Naruto_logo.png" height="120px" width="210px">
-
-                                <h2 id="paragrafo">
-                                    Episódios: 220
-                                </h2>
-
-                                <button onclick="Assistir_anime1()"> Assistir </button>
-
-                            </div>
-        
-                            <div class="anime-card">
-                                <p>
-                                    One Piece
-                                </p>
-
-                                <img src="imagens/one piece.png" height="120px" width="210px">
-
-                                <h2 id="paragrafo">
-                                    Episódios: 1023
-                                </h2>
-
-                                <button onclick="Assistir_anime2()"> Assistir </button>
-
-                            </div>
-        
-                        </section>
-        
-                    </div>
-        
-                </main>
-        
-          
-
-
-
-            
-
-
-                <!-- Sessões que estão escondidas, até que um anime seja clicado para assistir -->
-            
-                <!-- Sessão Super Onze. Alinhe os elementos em "flex-direction-column" -->
-                <section class="info_anime sumir">
-
-                    <!-- título -->
-                    <h2 class="nome-anime">
-                        Super Onze
-                    </h2>
-
-                    <!-- div com foto e introdução do anime. Conteúdo está um do lado do outro. Aplique
-                    "flex-direction:row" -->
-                    <div class="introdução-anime">
-
-                        <img src="imagens/super_onze.jpg" alt="Super Onze">
-
+                    <div class="anime-card" id="super-onze-anime-card" onmouseover="Display_super_onze_wp()" onmouseout="Undisplay_super_onze_wp()">
                         <p>
-                            Endou Mamoru é um goleiro muito talentoso, neto de Daisuke Endo, um dos melhores 
-                            goleiros no Japão, que morreu antes de ele nascer. Endou monta um time de futebol 
-                            em sua escola, a Raimon, para que assim pudessem entrar no Campeonato Futebol 
-                            Fronteira, até um misterioso atacante chamado Shuya Goenji se mudar para a sua escola.
+                            Super Onze
                         </p>
 
-                    </div>
-                
-                    <!-- lista não ordenada de espisódios. São links não funcionais, use o "onmouseover" 
-                    para que ele fique em negrito e sublinhado -->
-                    <div class="lista-episodios">
+                        <img src="imagens/super_onze.jpg" height="120px" width="210px">
 
-                        <ul>
-                            <li class="episodio" onmouseover="Deixar_negrito0()" onmouseout="Tirar_negrito0()"> Episódio 1 </li> 
-                            <li class="episodio" onmouseover="Deixar_negrito1()" onmouseout="Tirar_negrito1()"> Episódio 2 </li>
-                            <li class="episodio" onmouseover="Deixar_negrito2()" onmouseout="Tirar_negrito2()"> Episódio 3 </li>
-                            <li class="episodio" onmouseover="Deixar_negrito3()" onmouseout="Tirar_negrito3()"> Episódio 4 </li>
-                            <li class="episodio" onmouseover="Deixar_negrito4()" onmouseout="Tirar_negrito4()"> Episódio 5 </li>
-                            <li class="episodio" onmouseover="Deixar_negrito5()" onmouseout="Tirar_negrito5()"> Episódio 6 </li>
-                        </ul>
+                        <h2 id="paragrafo">
+                            Episódios: 124
+                        </h2>
+
+                        <button onclick="Assistir_anime0()"> Assistir </button>
 
                     </div>
 
-                    <div class="comentários">
-
-                        <textarea cols="30" rows="10" maxlength="300" placeholder="Comente aqui..."></textarea>
-                        <button> veja o </button>
-                    </div>
-
-                </section>
-
-
-                <!-- Sessão Naruto. Todas as configurações serão as mesmas que a primeira sessão" -->
-                <section class="info_anime sumir">
-
-                    <!-- título -->
-                    <h2 class="nome-anime">
-                        Naruto
-                    </h2>
-
-                    <!-- div com foto e introdução do anime. Conteúdo está um do lado do outro. Aplique
-                    "flex-direction:row" -->
-                    <div class="introdução-anime ">
-
-                        <img src="imagens/Naruto_logo.png" alt="Naruto">
-
+                    <div class="anime-card" id="naruto-anime-card" onmouseover="Display_naruto_wp()" onmouseout="Undisplay_naruto_wp()">
                         <p>
-                            Naruto é uma série de mangá escrita e ilustrada por Masashi Kishimoto, que conta a 
-                            história de Naruto Uzumaki, um jovem ninja que constantemente procura por reconhecimento 
-                            e sonha em se tornar Hokage, o ninja líder de sua vila.
+                            Naruto
                         </p>
 
-                    </div>
-                
-                    <!-- lista não ordenada de espisódios. São links não funcionais, use o "onmouseover" 
-                    para que ele fique em negrito e sublinhado -->
-                    <div class="lista-episodios">
+                        <img src="imagens/Naruto_logo.png" height="120px" width="210px">
 
-                        <ul>
-                            <li class="episodio" onmouseover="Deixar_negrito0()" onmouseout="Tirar_negrito0()"> Episódio 1 </li> 
-                            <li class="episodio" onmouseover="Deixar_negrito1()" onmouseout="Tirar_negrito1()"> Episódio 2 </li>
-                            <li class="episodio" onmouseover="Deixar_negrito2()" onmouseout="Tirar_negrito2()"> Episódio 3 </li>
-                            <li class="episodio" onmouseover="Deixar_negrito3()" onmouseout="Tirar_negrito3()"> Episódio 4 </li>
-                            <li class="episodio" onmouseover="Deixar_negrito4()" onmouseout="Tirar_negrito4()"> Episódio 5 </li>
-                            <li class="episodio" onmouseover="Deixar_negrito5()" onmouseout="Tirar_negrito5()"> Episódio 6 </li>
-                        </ul>
+                        <h2 id="paragrafo">
+                            Episódios: 220
+                        </h2>
+
+                        <button onclick="Assistir_anime1()"> Assistir </button>
 
                     </div>
 
-                    <div class="comentários">
-
-                        <textarea cols="30" rows="10" maxlength="300"> </textarea>
-
-                    </div>
-
-                </section>
-
-
-                <!-- Sessão One-Piece. Todas as configurações serão as mesmas que a primeira sessão" -->
-                <section class="info_anime sumir">
-
-                    <!-- título -->
-                    <h2 class="nome-anime">
-                        One-Piece
-                    </h2>
-
-                    <!-- div com foto e introdução do anime. Conteúdo está um do lado do outro. Aplique
-                    "flex-direction:row" -->
-                    <div class="introdução-anime">
-
-                        <img src="imagens/one piece.png" alt="One-Piece">
-
+                    <div class="anime-card" id="one-piece-anime-card" onmouseover="Display_one_piece_wp()" onmouseout="Undisplay_one_piece_wp()">
                         <p>
-                            A trama segue Luffy, um jovem com o corpo elástico que sonha em criar sua própria 
-                            tripulação e partir em uma aventura para se tornar o próximo Rei dos Piratas.
+                            One Piece
                         </p>
 
-                    </div>
-                
-                    <!-- lista não ordenada de espisódios. São links não funcionais, use o "onmouseover" 
-                    para que ele fique em negrito e sublinhado -->
-                    <div class="lista-episodios">
+                        <img src="imagens/one piece.png" height="120px" width="210px">
 
-                        <ul>
-                            <li class="episodio" onmouseover="Deixar_negrito0()" onmouseout="Tirar_negrito0()"> Episódio 1 </li> 
-                            <li class="episodio" onmouseover="Deixar_negrito1()" onmouseout="Tirar_negrito1()"> Episódio 2 </li>
-                            <li class="episodio" onmouseover="Deixar_negrito2()" onmouseout="Tirar_negrito2()"> Episódio 3 </li>
-                            <li class="episodio" onmouseover="Deixar_negrito3()" onmouseout="Tirar_negrito3()"> Episódio 4 </li>
-                            <li class="episodio" onmouseover="Deixar_negrito4()" onmouseout="Tirar_negrito4()"> Episódio 5 </li>
-                            <li class="episodio" onmouseover="Deixar_negrito5()" onmouseout="Tirar_negrito5()"> Episódio 6 </li>
-                        </ul>
+                        <h2 id="paragrafo">
+                            Episódios: 1023
+                        </h2>
+
+                        <button onclick="Assistir_anime2()"> Assistir </button>
 
                     </div>
 
-                    <div class="comentários">
+                </div>
 
-                        <textarea cols="30" rows="10" maxlength="300"> </textarea>
+            </section>
 
-                    </div>
+        </main>
 
-                </section>
+        <!-- Sessões que estão escondidas, até que um anime seja clicado para assistir -->
+
+        <!-- Sessão Super Onze. Alinhe os elementos em "flex-direction-column" -->
+        <section class="info_anime sumir">
+
+            <!-- título -->
+            <h2 class="nome-anime">
+                Super Onze
+            </h2>
+
+            <!-- div com foto e introdução do anime. Conteúdo está um do lado do outro. Aplique
+                    "flex-direction:row" -->
+            <div class="introdução-anime">
+
+                <img src="imagens/super_onze.jpg" alt="Super Onze">
+
+                <p>
+                    Endou Mamoru é um goleiro muito talentoso, neto de Daisuke Endo, um dos melhores
+                    goleiros no Japão, que morreu antes de ele nascer. Endou monta um time de futebol
+                    em sua escola, a Raimon, para que assim pudessem entrar no Campeonato Futebol
+                    Fronteira, até um misterioso atacante chamado Shuya Goenji se mudar para a sua escola.
+                </p>
 
             </div>
-                
-        </body>
+
+            <!-- lista não ordenada de espisódios. São links não funcionais, use o "onmouseover" 
+                    para que ele fique em negrito e sublinhado -->
+            <div class="lista-episodios">
+
+                <ul>
+                    <li class="episodio" onmouseover="Deixar_negrito0()" onmouseout="Tirar_negrito0()"> Episódio 1 </li>
+                    <li class="episodio" onmouseover="Deixar_negrito1()" onmouseout="Tirar_negrito1()"> Episódio 2 </li>
+                    <li class="episodio" onmouseover="Deixar_negrito2()" onmouseout="Tirar_negrito2()"> Episódio 3 </li>
+                    <li class="episodio" onmouseover="Deixar_negrito3()" onmouseout="Tirar_negrito3()"> Episódio 4 </li>
+                    <li class="episodio" onmouseover="Deixar_negrito4()" onmouseout="Tirar_negrito4()"> Episódio 5 </li>
+                    <li class="episodio" onmouseover="Deixar_negrito5()" onmouseout="Tirar_negrito5()"> Episódio 6 </li>
+                </ul>
+
+            </div>
+
+            <div class="comentários">
+
+                <textarea cols="30" rows="10" maxlength="300" placeholder="Comente aqui..."></textarea>
+                <button> veja o </button>
+            </div>
+
+        </section>
 
 
-        <script src="trabalho.js"></script>
+        <!-- Sessão Naruto. Todas as configurações serão as mesmas que a primeira sessão" -->
+        <section class="info_anime sumir">
 
-    </html>
+            <!-- título -->
+            <h2 class="nome-anime">
+                Naruto
+            </h2>
+
+            <!-- div com foto e introdução do anime. Conteúdo está um do lado do outro. Aplique
+                    "flex-direction:row" -->
+            <div class="introdução-anime ">
+
+                <img src="imagens/Naruto_logo.png" alt="Naruto">
+
+                <p>
+                    Naruto é uma série de mangá escrita e ilustrada por Masashi Kishimoto, que conta a
+                    história de Naruto Uzumaki, um jovem ninja que constantemente procura por reconhecimento
+                    e sonha em se tornar Hokage, o ninja líder de sua vila.
+                </p>
+
+            </div>
+
+            <!-- lista não ordenada de espisódios. São links não funcionais, use o "onmouseover" 
+                    para que ele fique em negrito e sublinhado -->
+            <div class="lista-episodios">
+
+                <ul>
+                    <li class="episodio" onmouseover="Deixar_negrito0()" onmouseout="Tirar_negrito0()"> Episódio 1 </li>
+                    <li class="episodio" onmouseover="Deixar_negrito1()" onmouseout="Tirar_negrito1()"> Episódio 2 </li>
+                    <li class="episodio" onmouseover="Deixar_negrito2()" onmouseout="Tirar_negrito2()"> Episódio 3 </li>
+                    <li class="episodio" onmouseover="Deixar_negrito3()" onmouseout="Tirar_negrito3()"> Episódio 4 </li>
+                    <li class="episodio" onmouseover="Deixar_negrito4()" onmouseout="Tirar_negrito4()"> Episódio 5 </li>
+                    <li class="episodio" onmouseover="Deixar_negrito5()" onmouseout="Tirar_negrito5()"> Episódio 6 </li>
+                </ul>
+
+            </div>
+
+            <div class="comentários">
+
+                <textarea cols="30" rows="10" maxlength="300"> </textarea>
+
+            </div>
+
+        </section>
+
+
+        <!-- Sessão One-Piece. Todas as configurações serão as mesmas que a primeira sessão" -->
+        <section class="info_anime sumir">
+
+            <!-- título -->
+            <h2 class="nome-anime">
+                One-Piece
+            </h2>
+
+            <!-- div com foto e introdução do anime. Conteúdo está um do lado do outro. Aplique
+                    "flex-direction:row" -->
+            <div class="introdução-anime">
+
+                <img src="imagens/one piece.png" alt="One-Piece">
+
+                <p>
+                    A trama segue Luffy, um jovem com o corpo elástico que sonha em criar sua própria
+                    tripulação e partir em uma aventura para se tornar o próximo Rei dos Piratas.
+                </p>
+
+            </div>
+
+            <!-- lista não ordenada de espisódios. São links não funcionais, use o "onmouseover" 
+                    para que ele fique em negrito e sublinhado -->
+            <div class="lista-episodios">
+
+                <ul>
+                    <li class="episodio" onmouseover="Deixar_negrito0()" onmouseout="Tirar_negrito0()"> Episódio 1 </li>
+                    <li class="episodio" onmouseover="Deixar_negrito1()" onmouseout="Tirar_negrito1()"> Episódio 2 </li>
+                    <li class="episodio" onmouseover="Deixar_negrito2()" onmouseout="Tirar_negrito2()"> Episódio 3 </li>
+                    <li class="episodio" onmouseover="Deixar_negrito3()" onmouseout="Tirar_negrito3()"> Episódio 4 </li>
+                    <li class="episodio" onmouseover="Deixar_negrito4()" onmouseout="Tirar_negrito4()"> Episódio 5 </li>
+                    <li class="episodio" onmouseover="Deixar_negrito5()" onmouseout="Tirar_negrito5()"> Episódio 6 </li>
+                </ul>
+
+            </div>
+
+            <div class="comentários">
+
+                <textarea cols="30" rows="10" maxlength="300"> </textarea>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+
+
+<script src="trabalho.js"></script>
+
+</html>
