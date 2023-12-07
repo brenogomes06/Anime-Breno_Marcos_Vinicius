@@ -352,9 +352,9 @@ header {
     border: 2px solid white;
     border-radius: 15px;
     box-shadow: 1px 1px 10px 1px white;
-    margin: 100px 100px 0px;
+    margin: 100px;
     background-color: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(3px);
+    margin-bottom: 50px;
 }
 
 
@@ -364,10 +364,10 @@ header {
     align-items: center;
     justify-content: center;
     color: red;
-    margin-top: 30px;
     text-decoration: underline;
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 30px;
     text-shadow: 2px 2px 0px black;
 
 }
@@ -378,7 +378,6 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     margin-top: 20px;
     padding: 0px 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -415,28 +414,36 @@ header {
 .info_anime .lista-episodios li {
     margin: 15px 0px;
     font-size: 27px;
-    text-shadow: 1px 1px 1px white;
+    text-shadow: 5px 5px 5px white;
     cursor: pointer;
 }
-
-.info_anime .lista-episodios li:hover {
-    text-shadow: 5px 5px 5px white;
-}
-
-
 
 /* *********************************************************** */
 
 
-.comentários textarea {
+/* sessão onde há o campo para escrever um comentário */
+
+.comentarios h4 {
+    margin: 0px 0px 10px 60px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.comentarios .area-comentarios {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
     width: 60%;
     height: 100px;
     border: 2px solid black;
     border-radius: 12px;
 
     margin-left: 50px;
-    margin-bottom: 50px;
-    padding: 20px 10px;
+    margin-bottom: 10px;
+    padding: 5px 5px;
     text-align: start;
 
     font-size: 20px;
@@ -444,9 +451,58 @@ header {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.comentarios .area-comentarios textarea {
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 5px;
+
+    font-size: 20px;
+}
+
+/* botão para enviar comentário */
+.comentarios .area-comentarios h6 {
+    margin: 0px;
+    margin-left: 3px;
+    border-radius: 5px;
+    padding: 3px 5px;
+    width: 50px;
+    text-align: center;
+    background-color: rgb(205, 196, 196);
+}
+
+.comentarios .area-comentarios h6:hover {
+    background-color: rgb(161, 157, 157);
+    cursor: pointer;
+}
+
+
+/* texto publicado depois de submeter comentário */
+.postagem-comentario {
+    margin: 0px;
+    max-width: 70%;
+    font-size: 20px;
+    color: white;
+    margin-left: 50px;
+}
+
+.postagem-comentario .p1 {
+    margin: 0px;
+    margin-top: 10px;
+    color: rgb(231, 203, 152);
+}
+
+.postagem-comentario .p2 {
+    margin-top: 3px;
+}
+
 /* sumir as sessões da lista de anime */
 .sumir {
     display: none;
 }
 
-/* -------------------------------------------- */
+.sumir-comentario {
+    display: none;
+}
+
+/************************************/
