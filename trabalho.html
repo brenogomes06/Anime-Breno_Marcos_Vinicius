@@ -169,144 +169,197 @@
 
         </main>
 
-        <!-- Sessões que estão escondidas, até que um anime seja clicado para assistir -->
+                        <!-- Sessões que estão escondidas, até que um anime seja clicado para assistir -->
+            
+                <!-- Sessão Super Onze. Alinhe os elementos em "flex-direction-column" -->
+                <section class="info_anime sumir">
 
-        <!-- Sessão Super Onze. Alinhe os elementos em "flex-direction-column" -->
-        <section class="info_anime sumir">
+                    <!-- título -->
+                    <h2 class="nome-anime">
+                        Super Onze
+                    </h2>
 
-            <!-- título -->
-            <h2 class="nome-anime">
-                Super Onze
-            </h2>
-
-            <!-- div com foto e introdução do anime. Conteúdo está um do lado do outro. Aplique
+                    <!-- div com foto e introdução do anime. Conteúdo está um do lado do outro. Aplique
                     "flex-direction:row" -->
-            <div class="introdução-anime">
+                    <div class="introdução-anime">
 
-                <img src="imagens/super_onze.jpg" alt="Super Onze">
+                        <img src="imagens/super_onze.jpg" alt="Super Onze">
 
-                <p>
-                    Endou Mamoru é um goleiro muito talentoso, neto de Daisuke Endo, um dos melhores
-                    goleiros no Japão, que morreu antes de ele nascer. Endou monta um time de futebol
-                    em sua escola, a Raimon, para que assim pudessem entrar no Campeonato Futebol
-                    Fronteira, até um misterioso atacante chamado Shuya Goenji se mudar para a sua escola.
-                </p>
+                        <p>
+                            Endou Mamoru é um goleiro muito talentoso, neto de Daisuke Endo, um dos melhores 
+                            goleiros no Japão, que morreu antes de ele nascer. Endou monta um time de futebol 
+                            em sua escola, a Raimon, para que assim pudessem entrar no Campeonato Futebol 
+                            Fronteira, até um misterioso atacante chamado Shuya Goenji se mudar para a sua escola.
+                        </p>
 
-            </div>
-
-            <!-- lista não ordenada de espisódios. São links não funcionais, use o "onmouseover" 
+                    </div>
+                
+                    <!-- lista não ordenada de espisódios. São links não funcionais, use o "onmouseover" 
                     para que ele fique em negrito e sublinhado -->
-            <div class="lista-episodios">
+                    <div class="lista-episodios">
 
-                <ul>
-                    <li class="episodio" onmouseover="Deixar_negrito0()" onmouseout="Tirar_negrito0()"> Episódio 1 </li>
-                    <li class="episodio" onmouseover="Deixar_negrito1()" onmouseout="Tirar_negrito1()"> Episódio 2 </li>
-                    <li class="episodio" onmouseover="Deixar_negrito2()" onmouseout="Tirar_negrito2()"> Episódio 3 </li>
-                    <li class="episodio" onmouseover="Deixar_negrito3()" onmouseout="Tirar_negrito3()"> Episódio 4 </li>
-                    <li class="episodio" onmouseover="Deixar_negrito4()" onmouseout="Tirar_negrito4()"> Episódio 5 </li>
-                    <li class="episodio" onmouseover="Deixar_negrito5()" onmouseout="Tirar_negrito5()"> Episódio 6 </li>
-                </ul>
+                        <ul>
+                            <li class="episodio"> Episódio 1 </li> 
+                            <li class="episodio"> Episódio 2 </li>
+                            <li class="episodio"> Episódio 3 </li>
+                            <li class="episodio"> Episódio 4 </li>
+                            <li class="episodio"> Episódio 5 </li>
+                            <li class="episodio"> Episódio 6 </li>
+                        </ul>
 
-            </div>
+                    </div>
 
-            <div class="comentários">
+                    <!-- div com espaço destinado para o usuário da página deixar um comentário -->
+                    <div class="comentarios">
+                        <h4>Deixe seu comentário:</h4>
+                        <div class="area-comentarios">
 
-                <textarea cols="30" rows="10" maxlength="300" placeholder="Comente aqui..."></textarea>
-                <button> veja o </button>
-            </div>
+                            
+                            <textarea class="submeter-comentario" cols="30" rows="10" maxlength="300" placeholder="Comente aqui..."></textarea>
+                            <h6 onclick="Enviar_comentario0()">Enviar</h6>
 
-        </section>
+                        </div>
+
+                    </div>
+
+                    <!-- div oculta. o que o usuario comentar irá aparecer como texto ao inves do lorem -->
+                    <div class="postagem-comentario sumir-comentario">
+                        <p class="p1">UserX:</p>
+                        <p class="p2">
+                            UserX: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis dicta 
+                            consequuntur, vitae veniam odio aliquam quae. Maxime labore ipsum impedit 
+                            molestiae inventore et? Odit atque officia veritatis. Id, vero possimus?
+                        </p>
+                    </div>
+
+                </section>
 
 
-        <!-- Sessão Naruto. Todas as configurações serão as mesmas que a primeira sessão" -->
-        <section class="info_anime sumir">
+                <!-- Sessão Naruto. Todas as configurações serão as mesmas que a primeira sessão" -->
+                <section class="info_anime sumir">
 
-            <!-- título -->
-            <h2 class="nome-anime">
-                Naruto
-            </h2>
+                    <!-- título -->
+                    <h2 class="nome-anime">
+                        Naruto
+                    </h2>
 
-            <!-- div com foto e introdução do anime. Conteúdo está um do lado do outro. Aplique
+                    <!-- div com foto e introdução do anime. Conteúdo está um do lado do outro. Aplique
                     "flex-direction:row" -->
-            <div class="introdução-anime ">
+                    <div class="introdução-anime ">
 
-                <img src="imagens/Naruto_logo.png" alt="Naruto">
+                        <img src="imagens/Naruto_logo.png" alt="Naruto">
 
-                <p>
-                    Naruto é uma série de mangá escrita e ilustrada por Masashi Kishimoto, que conta a
-                    história de Naruto Uzumaki, um jovem ninja que constantemente procura por reconhecimento
-                    e sonha em se tornar Hokage, o ninja líder de sua vila.
-                </p>
+                        <p>
+                            Naruto é uma série de mangá escrita e ilustrada por Masashi Kishimoto, que conta a 
+                            história de Naruto Uzumaki, um jovem ninja que constantemente procura por reconhecimento 
+                            e sonha em se tornar Hokage, o ninja líder de sua vila.
+                        </p>
 
-            </div>
-
-            <!-- lista não ordenada de espisódios. São links não funcionais, use o "onmouseover" 
+                    </div>
+                
+                    <!-- lista não ordenada de espisódios. São links não funcionais, use o "onmouseover" 
                     para que ele fique em negrito e sublinhado -->
-            <div class="lista-episodios">
+                    <div class="lista-episodios">
 
-                <ul>
-                    <li class="episodio" onmouseover="Deixar_negrito0()" onmouseout="Tirar_negrito0()"> Episódio 1 </li>
-                    <li class="episodio" onmouseover="Deixar_negrito1()" onmouseout="Tirar_negrito1()"> Episódio 2 </li>
-                    <li class="episodio" onmouseover="Deixar_negrito2()" onmouseout="Tirar_negrito2()"> Episódio 3 </li>
-                    <li class="episodio" onmouseover="Deixar_negrito3()" onmouseout="Tirar_negrito3()"> Episódio 4 </li>
-                    <li class="episodio" onmouseover="Deixar_negrito4()" onmouseout="Tirar_negrito4()"> Episódio 5 </li>
-                    <li class="episodio" onmouseover="Deixar_negrito5()" onmouseout="Tirar_negrito5()"> Episódio 6 </li>
-                </ul>
+                        <ul>
+                            <li class="episodio"> Episódio 1 </li> 
+                            <li class="episodio"> Episódio 2 </li>
+                            <li class="episodio"> Episódio 3 </li>
+                            <li class="episodio"> Episódio 4 </li>
+                            <li class="episodio"> Episódio 5 </li>
+                            <li class="episodio"> Episódio 6 </li>
+                        </ul>
 
-            </div>
+                    </div>
 
-            <div class="comentários">
+                    <!-- div com espaço destinado para o usuário da página deixar um comentário -->
+                    <div class="comentarios">
 
-                <textarea cols="30" rows="10" maxlength="300"> </textarea>
+                        <h4>Deixe seu comentário:</h4>
+                        <div class="area-comentarios">
 
-            </div>
+                            <textarea class="submeter-comentario" cols="30" rows="10" maxlength="300" placeholder="Comente aqui..."></textarea>
+                            <h6 onclick="Enviar_comentario1()">Enviar</h6>
 
-        </section>
+                        </div>
+
+                    </div>
+                    
+                    <!-- div oculta. o que o usuario comentar irá aparecer como texto ao inves do lorem -->
+                    <div class="postagem-comentario sumir-comentario">
+
+                        <p class="p1">UserX:</p>
+                        <p class="p2">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis dicta 
+                            consequuntur, vitae veniam odio aliquam quae. Maxime labore ipsum impedit 
+                            molestiae inventore et? Odit atque officia veritatis. Id, vero possimus?
+                        </p>
+
+                    </div>
+
+                </section>
 
 
-        <!-- Sessão One-Piece. Todas as configurações serão as mesmas que a primeira sessão" -->
-        <section class="info_anime sumir">
+                <!-- Sessão One-Piece. Todas as configurações serão as mesmas que a primeira sessão" -->
+                <section class="info_anime sumir">
 
-            <!-- título -->
-            <h2 class="nome-anime">
-                One-Piece
-            </h2>
+                    <!-- título -->
+                    <h2 class="nome-anime">
+                        One-Piece
+                    </h2>
 
-            <!-- div com foto e introdução do anime. Conteúdo está um do lado do outro. Aplique
+                    <!-- div com foto e introdução do anime. Conteúdo está um do lado do outro. Aplique
                     "flex-direction:row" -->
-            <div class="introdução-anime">
+                    <div class="introdução-anime">
 
-                <img src="imagens/one piece.png" alt="One-Piece">
+                        <img src="imagens/one piece.png" alt="One-Piece">
 
-                <p>
-                    A trama segue Luffy, um jovem com o corpo elástico que sonha em criar sua própria
-                    tripulação e partir em uma aventura para se tornar o próximo Rei dos Piratas.
-                </p>
+                        <p>
+                            A trama segue Luffy, um jovem com o corpo elástico que sonha em criar sua própria 
+                            tripulação e partir em uma aventura para se tornar o próximo Rei dos Piratas.
+                        </p>
 
-            </div>
-
-            <!-- lista não ordenada de espisódios. São links não funcionais, use o "onmouseover" 
+                    </div>
+                
+                    <!-- lista não ordenada de espisódios. São links não funcionais, use o "onmouseover" 
                     para que ele fique em negrito e sublinhado -->
-            <div class="lista-episodios">
+                    <div class="lista-episodios">
 
-                <ul>
-                    <li class="episodio" onmouseover="Deixar_negrito0()" onmouseout="Tirar_negrito0()"> Episódio 1 </li>
-                    <li class="episodio" onmouseover="Deixar_negrito1()" onmouseout="Tirar_negrito1()"> Episódio 2 </li>
-                    <li class="episodio" onmouseover="Deixar_negrito2()" onmouseout="Tirar_negrito2()"> Episódio 3 </li>
-                    <li class="episodio" onmouseover="Deixar_negrito3()" onmouseout="Tirar_negrito3()"> Episódio 4 </li>
-                    <li class="episodio" onmouseover="Deixar_negrito4()" onmouseout="Tirar_negrito4()"> Episódio 5 </li>
-                    <li class="episodio" onmouseover="Deixar_negrito5()" onmouseout="Tirar_negrito5()"> Episódio 6 </li>
-                </ul>
+                        <ul>
+                            <li class="episodio"> Episódio 1 </li> 
+                            <li class="episodio"> Episódio 2 </li>
+                            <li class="episodio"> Episódio 3 </li>
+                            <li class="episodio"> Episódio 4 </li>
+                            <li class="episodio"> Episódio 5 </li>
+                            <li class="episodio"> Episódio 6 </li>
+                        </ul>
 
-            </div>
+                    </div>
 
-            <div class="comentários">
+                    <!-- div com espaço destinado para o usuário da página deixar um comentário -->
+                    <div class="comentarios">
 
-                <textarea cols="30" rows="10" maxlength="300"> </textarea>
+                        <h4>Deixe seu comentário:</h4>
+                        <div class="area-comentarios">
 
-            </div>
+                            <textarea class="submeter-comentario" cols="30" rows="10" maxlength="300" placeholder="Comente aqui..."></textarea>
+                            <h6 onclick="Enviar_comentario2()">Enviar</h6>
 
-        </section>
+                        </div>
+    
+                    </div>
+
+                    <!-- div oculta. o que o usuario comentar irá aparecer como texto ao inves do lorem -->
+                    <div class="postagem-comentario sumir-comentario">
+                            <p class="p1">UserX:</p>
+                            <p class="p2">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis dicta 
+                                consequuntur, vitae veniam odio aliquam quae. Maxime labore ipsum impedit 
+                                molestiae inventore et? Odit atque officia veritatis. Id, vero possimus?
+                            </p>
+                    </div>
+                    
+                </section>
 
     </div>
 
