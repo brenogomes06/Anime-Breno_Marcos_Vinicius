@@ -119,8 +119,10 @@
     text-decoration: none;
     color: white;
 }
+/* -------------------ASIDE------------------- */
 
-/* ------------------- ASIDE ----------------- */
+
+
 
 /* -----------------SCROLLBAR----------------- */
 ::-webkit-scrollbar {
@@ -136,8 +138,10 @@
     background: rgb(97, 97, 97);
     border-radius: 2px;
 }
+/* ----------------SCROLLBAR-------------------- */
 
-/* -------------------------------------------- */
+
+
 
 /* -------------------- BODY ------------------ */
 body {
@@ -149,12 +153,17 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+/* -------------------- BODY ------------------ */
+
+
 
 /* -------------------- CONTAINER ------------------ */
 
 .container {
     height: 100dvh;
 }
+/* -------------------- CONTAINER ------------------ */
+
 
 /* -------------------- HEADER ------------------ */
 header {
@@ -245,7 +254,11 @@ header {
     cursor: pointer;
 }
 
-/* -------------------------------------------- */
+/* -------------------- HEADER ------------------ */
+
+
+
+
 
 /* -------------------- MAIN ------------------ */
 .container-main {
@@ -340,12 +353,16 @@ header {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     cursor: pointer;
 }
+/* -------------------- MAIN ------------------ */
 
-/* -------------------------------------------- */
+
+
+
+/* ------------------ SECTIONS ------------------ */
 
 /* estilo da sessão com as infos dos animes */
 
-/* section que é o pai dos elementos abaixo */
+/***** section que é o pai dos elementos abaixo *****/
 .info_anime {
     display: flex;
     flex-direction: column;
@@ -356,6 +373,8 @@ header {
     background-color: rgba(0, 0, 0, 0.4);
     margin-bottom: 50px;
 }
+/***** section que é o pai dos elementos abaixo *****/
+
 
 
 /* título do anime */
@@ -369,8 +388,9 @@ header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 30px;
     text-shadow: 2px 2px 0px black;
-
 }
+/* título do anime */
+
 
 
 /* div que é pai da imagem e parágrafo de introdução */
@@ -382,21 +402,30 @@ header {
     padding: 0px 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+/* div que é pai da imagem e parágrafo de introdução */
 
+
+/* imagem de dentro da introdução do anime */
 .info_anime .introdução-anime img {
     width: 320px;
     height: 180px;
     float: left;
     margin-right: 30px;
 }
+/* imagem de dentro da introdução do anime */
 
+
+
+/* parágrafo de explicação do anime */
 .info_anime .introdução-anime p {
     margin: 0px;
     max-width: 50%;
     font-size: 20px;
     color: white;
-
 }
+/* parágrafo de explicação do anime */
+
+
 
 /* parte da lista de epidódios */
 .info_anime .lista-episodios ul {
@@ -417,12 +446,12 @@ header {
     text-shadow: 5px 5px 5px white;
     cursor: pointer;
 }
+/* parte da lista de epidódios */
 
-/* *********************************************************** */
 
 
-/* sessão onde há o campo para escrever um comentário */
 
+/****** sessão onde há o campo para escrever um comentário ******/
 .comentarios h4 {
     margin: 0px 0px 10px 60px;
     color: white;
@@ -471,10 +500,13 @@ header {
     background-color: rgb(205, 196, 196);
 }
 
+
 .comentarios .area-comentarios h6:hover {
     background-color: rgb(161, 157, 157);
     cursor: pointer;
 }
+/* botão para enviar comentário */
+
 
 
 /* texto publicado depois de submeter comentário */
@@ -495,6 +527,14 @@ header {
 .postagem-comentario .p2 {
     margin-top: 3px;
 }
+/* texto publicado depois de submeter comentário */
+
+
+/****** sessão onde há o campo para escrever um comentário ******/
+/* ------------------ SECTIONS ------------------ */
+
+
+
 
 /* sumir as sessões da lista de anime */
 .sumir {
