@@ -36,6 +36,9 @@ function Aparecer_aside()
 /* ----------------------------------------------------------------------------------------------------*/
 
 
+
+
+/* ----------------------------------------------------------------------------------------------------*/
 // 2ª Função do site, para selecionar o anime que quer assistir.
 function Assistir_anime0()
 {
@@ -75,6 +78,9 @@ function Assistir_anime2()
 /* ----------------------------------------------------------------------------------------------------*/
 
 
+
+
+/* ----------------------------------------------------------------------------------------------------*/
 // 4ª função do site, aparecer comentário submetido na área de texto
 function Enviar_comentario0()
 {
@@ -110,7 +116,9 @@ function Enviar_comentario2()
 
 
 
-    /* ----------------------------------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------*/
+// 5ª função, on mouseover no catálogo de animes para aparecer um background diferente quando o mouse passa por cima.
+
 // Super onze
 var catalog = document.getElementById("catalog")
 function Display_super_onze_wp(){
@@ -144,13 +152,3 @@ function Undisplay_one_piece_wp(){
     catalog.classList.add("catalog-background")
 }
 /* ----------------------------------------------------------------------------------------------------*/
-
-
-    negrito_5.style.fontWeight = "normal";
-}
-
-
-
-
-
-// 5ª função do site, aparecer comentário submetido na área de texto
